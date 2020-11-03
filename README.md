@@ -2,11 +2,20 @@
 
 ## About
 
+[Statements](statements.py)
+
 - IF Statement
 - ELIF Statement
 - ELSE Statement
 
-## Task
+[Loops](loops.py)
+
+- FOR Loop
+- While Loop
+
+## Task 1
+
+Available: [here](task_1.py)
 
 - Create a program using Control Flow
 - Using operators == < >

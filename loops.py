@@ -51,6 +51,20 @@ sample_list = ["foo", "bar", "dev", "ops"]
 found = False
 while not found:
     if "python" in sample_list:
-        found = True # => Can also use "break"
+        found = True  # => Can also use "break"
     else:
         sample_list.append("python")
+
+## Adding user input
+user_prompt = True
+
+while user_prompt:
+    age = input("Please input your age.\n=> ")
+
+    # isdigit() checks if string contains only integers
+    if age.isdigit() and int(age) < 100:
+        user_prompt = False
+    else:
+        print("Please provide the age as an Integer")
+
+print(f"Your age is {age}")

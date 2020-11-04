@@ -42,6 +42,7 @@ for v in sample_dict.values():
 
 # WHILE Loop
 # Used to loop through a code block until a specific condition is met
+# There's a 'break' and 'continue' statement to help control the flow of the loop
 # Syntax: while <condition> operator <condition>:
 
 ## While looping through a list
@@ -50,6 +51,6 @@ sample_list = ["foo", "bar", "dev", "ops"]
 found = False
 while not found:
     if "python" in sample_list:
-        found = True
+        found = True # => Can also use "break"
     else:
         sample_list.append("python")

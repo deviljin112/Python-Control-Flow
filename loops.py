@@ -21,17 +21,23 @@ sample_dict = {
     "hobbies": ["Coding", "Gaming", "Sleeping"],
 }
 
+# Loops through the key-value pairs in a dictionary
 for k, v in sample_dict.items():
+    # Checks if the variable 'v' is a list or not
     if isinstance(v, list):
         print(f"Key: {k}")
+        # If it is a list, nested for loop to print all the list values
         for i in v:
             print(f"List Value: {i}")
+    # Else just print the key and value
     else:
         print(f"Key: {k}, Value: {v}")
 
+# Similar to above but only looping through the keys
 for k in sample_dict.keys():
     print(f"Key: {k}")
 
+# Similar to .items() but only looping through the values
 for v in sample_dict.values():
     if isinstance(v, list):
         for i in v:
@@ -48,7 +54,9 @@ for v in sample_dict.values():
 ## While looping through a list
 sample_list = ["foo", "bar", "dev", "ops"]
 
+# Bool for the while loop
 found = False
+# While found is False, continue the loop
 while not found:
     if "python" in sample_list:
         found = True  # => Can also use "break"
@@ -57,7 +65,6 @@ while not found:
 
 ## Adding user input
 user_prompt = True
-
 while user_prompt:
     age = input("Please input your age.\n=> ")
 
